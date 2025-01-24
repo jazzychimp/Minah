@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Minah/static/css/main.49e10f2b.css",
-    "main.js": "/Minah/static/js/main.9f06407a.js",
+    "main.css": "/Minah/static/css/main.a34854e1.css",
+    "main.js": "/Minah/static/js/main.1206da7e.js",
     "static/js/453.bea66239.chunk.js": "/Minah/static/js/453.bea66239.chunk.js",
     "static/media/Roboto-VariableFont_wdth,wght.ttf": "/Minah/static/media/Roboto-VariableFont_wdth,wght.3c9d0f6513f7cfe91016.ttf",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/Minah/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
@@ -12,12 +12,12 @@
     "static/media/pin.png": "/Minah/static/media/pin.a44fca73ba01f2baaee3.png",
     "static/media/logo.svg": "/Minah/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Minah/index.html",
-    "main.49e10f2b.css.map": "/Minah/static/css/main.49e10f2b.css.map",
-    "main.9f06407a.js.map": "/Minah/static/js/main.9f06407a.js.map",
+    "main.a34854e1.css.map": "/Minah/static/css/main.a34854e1.css.map",
+    "main.1206da7e.js.map": "/Minah/static/js/main.1206da7e.js.map",
     "453.bea66239.chunk.js.map": "/Minah/static/js/453.bea66239.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.49e10f2b.css",
-    "static/js/main.9f06407a.js"
+    "static/css/main.a34854e1.css",
+    "static/js/main.1206da7e.js"
   ]
 }
