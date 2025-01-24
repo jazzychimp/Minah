@@ -1,39 +1,38 @@
 .Americas {
     font-family: sans-serif;
     text-align: center;
-}
-
-* {
+  }
+  
+  * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-#root {
+  }
+  
+  #root {
     height: 100vh;
-}
-
-.leaflet-container{
+  }
+  
+  .leaflet-container {
     height: 100vh;
-}
-
-.cluster-icon {
+  }
+  
+  .cluster-icon {
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
     background-color: #fff;
-    color:crimson;
+    color: crimson;
     transform: translate(-25%, -25%);
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 900;
     font-size: 1.5rem;
-}
-
-
-.modal {
-    position: relative; /* Ensure the modal is the relative container for the absolute positioning of the image */
+  }
+  
+  .modal {
+    position: relative;
     width: 80vh;
     height: 70vh;
     margin: 20px auto;
@@ -46,14 +45,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: all 0.3s ease-in-out;
   }
   
-  /* Image in the upper-right corner */
   .modal .top-right-image {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 50px; /* Adjust the size of the image as needed */
+    width: 50px;
     height: 50px;
     object-fit: cover;
     border-radius: 4px;
@@ -72,12 +71,13 @@
     align-items: center;
     z-index: 9998;
   }
-
+  
   .modal-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Ensures content wraps in smaller screens */
   }
   
   .modal-image-container {
@@ -97,15 +97,13 @@
     margin-left: 20px;
   }
   
-  /* Title styling */
   .modal-title {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     color: #333;
     font-weight: bold;
     margin-bottom: 10px;
   }
   
-  /* Description styling */
   .modal-description {
     font-size: 1rem;
     color: #666;
@@ -114,39 +112,52 @@
   
   /* Mobile responsiveness */
   @media (max-width: 768px) {
+    .modal {
+      width: 90vw; /* Modal width is set to 90% of the viewport width */
+      height: auto; /* Allow height to adjust according to content */
+      padding: 15px; /* Reduce padding for smaller screens */
+    }
+  
     .modal-content {
-      flex-direction: column;
+      flex-direction: column; /* Stack content vertically on small screens */
+      justify-content: flex-start;
+      align-items: flex-start; /* Align items to the start */
     }
   
     .modal-image-container {
       margin-right: 0;
       margin-bottom: 20px;
+      max-width: 100%; /* Ensure image container takes full width */
     }
   
     .modal-image {
-      max-width: 100%;
+      max-width: 100%; /* Ensure the image scales with the container */
+    }
+  
+    .modal-text {
+      max-width: 100%; /* Allow text to take full width */
+      margin-left: 0;
     }
   
     .modal-title {
-      font-size: 1.5rem;
+      font-size: 1.2rem; /* Adjust title size for mobile */
     }
   
     .modal-description {
-      font-size: 1rem;
+      font-size: 0.9rem; /* Adjust description size for mobile */
     }
   }
   
-
   /* Customize the EasyButton */
-.leaflet-easy-button-button {
-    background-color: #4CAF50; /* Change background color */
-    border-radius: 50%; /* Make it circular */
-    font-size: 20px; /* Change the icon size */
-    color: white; /* Change the icon color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+  .leaflet-easy-button-button {
+    background-color: #4CAF50;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
   .leaflet-easy-button-button:hover {
-    background-color: #45a049; /* Change color on hover */
+    background-color: #45a049;
   }
   
