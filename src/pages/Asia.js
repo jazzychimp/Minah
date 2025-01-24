@@ -176,6 +176,12 @@ export default function Asia() {
         className="modal"
         overlayClassName="overlay"
       >
+        <img
+          src={`${process.env.PUBLIC_URL}/images/stamp.png`}
+          // Specify the image URL you want to display in the top-right corner
+          alt="Top-right Image"
+          className="top-right-image"
+        />
         <div className="modal-content">
           <div className="modal-image-container">
             <img

@@ -31,10 +31,11 @@
     font-size: 1.5rem;
 }
 
-/*.modal {
-    width:80vh;
+
+.modal {
+    position: relative; /* Ensure the modal is the relative container for the absolute positioning of the image */
+    width: 80vh;
     height: 70vh;
-    position: relative;
     margin: 20px auto;
     padding: 20px;
     background-color: rgb(220, 220, 200);
@@ -42,33 +43,23 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: auto;
     z-index: 9999;
-    align-items: center; 
-    justify-content: center; 
     display: flex;
     flex-direction: column;
-  }*/
-  
-  .modal {
-    width: 80vh;
-    height: 70vh;
-    position: relative;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: rgb(220, 220, 200);
-    border-radius: 8px;
-    border: 8px #333;
-    border-color: white;
-/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
-    box-shadow: 0 4px 6px rgb(180, 180, 160) ;
-
-    overflow: auto;
-    z-index: 9999;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
   }
-
+  
+  /* Image in the upper-right corner */
+  .modal .top-right-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px; /* Adjust the size of the image as needed */
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
   .overlay {
     background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
@@ -82,37 +73,28 @@
     z-index: 9998;
   }
 
-/* Modal content flexbox layout */
-.modal-content {
+  .modal-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
   }
   
-  /* Styling for the image container */
   .modal-image-container {
-    flex: 1.5;
+    max-width: 50%;
     margin-right: 20px;
   }
   
   .modal-image {
     width: 100%;
     height: auto;
-    object-fit: contain; /* Ensures image retains aspect ratio */
-    max-width: 400px; /* Optionally limit max width */
-    border-radius: 8px;
-    border: 3px solid #161E13;
+    display: block;
+    object-fit: contain;
   }
   
-  /* Text container for the title and description */
   .modal-text {
-    flex: 1.5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    max-width: 40%;
+    margin-left: 20px;
   }
   
   /* Title styling */
