@@ -35,7 +35,7 @@ export default function Asia() {
       popUp: "SK Global",
       imageUrl: "/images/sk.jpg", // Optional image for each marker
       description:
-        "Your square head looks so smelly. I'm very grateful of the three months we had together. I had so much fun.",
+        "Your square head looks so smelly. I'm very grateful for the three months we had together. I had so much fun.",
     },
     {
       geocode: [37.56650200174031, 126.92814015897962],
