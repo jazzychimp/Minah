@@ -176,7 +176,11 @@ export default function NorthAmerica() {
       >
         <div className="modal-content">
           <div className="modal-image-container">
-            <img src={modalImage} alt={modalTitle} className="modal-image" />
+            <img
+              src={`${process.env.PUBLIC_URL}${modalImage}`}
+              alt={modalTitle}
+              className="modal-image"
+            />
           </div>
           <div className="modal-text">
             <h2 className="modal-title">{modalTitle}</h2>

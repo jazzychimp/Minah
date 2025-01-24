@@ -1,7 +1,7 @@
 import "../App.css";
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
-import { Link, BrowserRouter, Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import { useNavigate, Navigate } from "react-router-dom";
 
 function Home() {
@@ -36,7 +36,8 @@ function Home() {
           {/* Removed the gradient background */}
           <img
             className="relative w-40 group-hover:scale-110 transition-transform duration-300 ease-in-out"
-            src="/images/northamerica.png"
+            /* src="/images/northamerica.png"*/
+            src={`${process.env.PUBLIC_URL}/images/northamerica.png`} // This can help resolve path issues
             alt=""
           />
         </div>
@@ -53,7 +54,7 @@ function Home() {
           {/* Removed the gradient background */}
           <img
             className="relative w-40"
-            src="/images/southamerica.png"
+            src={`${process.env.PUBLIC_URL}/images/southamerica.png`} // This can help resolve path issues
             alt=""
           />
         </div>
@@ -67,7 +68,11 @@ function Home() {
         {" "}
         <div className="relative pt-10 px-10 flex items-center justify-center">
           {/* Removed the gradient background */}
-          <img className="relative w-40" src="/images/europe.png" alt="" />{" "}
+          <img
+            className="relative w-40"
+            src={`${process.env.PUBLIC_URL}/images/europe.png`} // This can help resolve path issues
+            alt=""
+          />{" "}
         </div>
         <div className="relative font-customFont font-semibold text-black px-6 pb-6 mt-6 flex justify-center items-center">
           <span className="block opacity-75 -mb-1">EUROPE</span>
@@ -82,7 +87,7 @@ function Home() {
         <div className="relative pt-10 px-10 flex items-center justify-center group-hover:scale-110 transition-transform">
           <img
             className="relative w-40 group-hover:scale-110 transition-transform duration-300 ease-in-out"
-            src="/images/asia.png"
+            src={`${process.env.PUBLIC_URL}/images/asia.png`} // This can help resolve path issues
             alt=""
           />{" "}
         </div>
@@ -97,7 +102,7 @@ function Home() {
           {/* Removed the gradient background */}
           <img
             className="relative w-40"
-            src="/images/australia.png"
+            src={`${process.env.PUBLIC_URL}/images/australia.png`} // This can help resolve path issues
             alt=""
           />{" "}
         </div>
@@ -110,7 +115,11 @@ function Home() {
         {" "}
         <div className="relative pt-10 px-10 flex items-center justify-center">
           {/* Removed the gradient background */}
-          <img className="relative w-40" src="/images/africa.png" alt="" />{" "}
+          <img
+            className="relative w-40"
+            src={`${process.env.PUBLIC_URL}/images/africa.png`} // This can help resolve path issues
+            alt=""
+          />{" "}
         </div>
         <div className="relative font-customFont font-semibold text-black px-6 pb-6 mt-6 flex justify-center items-center">
           <span className="block opacity-75 -mb-1">AFRICA</span>
@@ -123,7 +132,7 @@ function Home() {
           {/* Removed the gradient background */}
           <img
             className="relative w-40"
-            src="/images/antartica.png"
+            src={`${process.env.PUBLIC_URL}/images/antartica.png`} // This can help resolve path issues
             alt=""
           />{" "}
         </div>
