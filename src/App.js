@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import React, { useEffect, useState } from "react";
+import ReactDOM from "react-dom";
+import { Link } from "react-router-dom";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import { Navigate } from "react-router-dom";
+import Home from "./pages/Home";
+import NorthAmerica from "./pages/NorthAmerica";
+import Asia from "./pages/Asia";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/NorthAmerica" element={<NorthAmerica />} />
+          <Route path="/Asia" element={<Asia />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
